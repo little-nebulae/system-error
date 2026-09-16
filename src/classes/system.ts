@@ -1,6 +1,6 @@
 import { BaseError } from "@little-nebulae/error";
 
-import type { ErrnoRecord } from "@/errno";
+import type { ErrnoRecord } from "@/constants/errno";
 
 export abstract class SystemError<TCode extends string> extends BaseError<
   TCode,

@@ -1,5 +1,5 @@
 import { SystemError } from "@/classes/system";
-import { ERRNO_RECORD } from "@/errno";
+import { ERRNO_RECORD } from "@/constants/errno";
 
 export const PERMISSION_DENIED_SYSTEM_ERROR_CODE =
   "PERMISSION_DENIED_SYSTEM_ERROR";
