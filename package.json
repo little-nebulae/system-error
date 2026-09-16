@@ -11,6 +11,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
+    "gen:errno": "tsx scripts/generate-errno-record.ts",
     "build": "tsdown",
     "fmt": "oxfmt --disable-nested-config",
     "fmt:check": "oxfmt --check --disable-nested-config",
@@ -27,6 +28,7 @@
     "oxlint": "1.83.0",
     "oxlint-tsgolint": "7.0.2001",
     "publint": "0.3.24",
+    "tinyexec": "1.3.1",
     "tsdown": "0.23.0",
     "tsx": "4.23.13",
     "typescript": "7.0.2",
