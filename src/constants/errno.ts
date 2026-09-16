@@ -1,3 +1,5 @@
+import type { ValueOf } from "@little-nebulae/type-utils";
+
 export const ERRNO_RECORD = {
   EPERM: {
     name: "EPERM",
@@ -564,4 +566,5 @@ export const ERRNO_RECORD = {
 } as const;
 
 export type ErrnoRecord = typeof ERRNO_RECORD;
-export type ErrnoName = ErrnoRecord[keyof ErrnoRecord]["name"];
+export type ErrnoRecordValue = ValueOf<ErrnoRecord>;
+export type ErrnoName = ErrnoRecordValue["name"];

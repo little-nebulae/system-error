@@ -1,4 +1,4 @@
-import type { ErrnoRecord } from "@/constants/errno";
+import type { ErrnoRecordValue } from "@/constants/errno";
 
 import { ERRNO_RECORD } from "@/constants/errno";
 
@@ -17,5 +17,5 @@ export const SYSTEM_ERROR_CODE_RECORD = {
   },
 } as const satisfies Record<
   string,
-  { code: `${string}_SYSTEM_ERROR`; errno: ErrnoRecord[keyof ErrnoRecord] }
+  { code: `${string}_SYSTEM_ERROR`; errno: ErrnoRecordValue }
 >;
