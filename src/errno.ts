@@ -562,3 +562,6 @@ export const ERRNO_RECORD = {
     message: "Operation not supported",
   },
 } as const;
+
+export type ErrnoRecord = typeof ERRNO_RECORD;
+export type ErrnoName = ErrnoRecord[keyof ErrnoRecord]["name"];
