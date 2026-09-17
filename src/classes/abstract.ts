@@ -2,8 +2,7 @@ import type { BaseErrorMeta } from "@little-nebulae/error";
 
 import { BaseError } from "@little-nebulae/error";
 
-import type { SystemErrorCode } from "@/constants/code";
-import type { ErrnoRecordValue } from "@/constants/errno";
+import type { SystemErrorCode, SystemErrorRecord } from "@/constants";
 
 export abstract class SystemError<
   TCode extends SystemErrorCode,
@@ -12,5 +11,5 @@ export abstract class SystemError<
   // oxlint-disable-next-line unicorn/custom-error-definition
   abstract override readonly name: string;
   abstract override readonly code: TCode;
-  abstract readonly errno: ErrnoRecordValue;
+  abstract readonly errno: SystemErrorRecord[TCode]["errno"];
 }
