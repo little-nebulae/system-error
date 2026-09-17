@@ -21,6 +21,9 @@
     "fix": "pnpm run lint:fix && pnpm run fmt",
     "test": "vitest run"
   },
+  "dependencies": {
+    "@little-nebulae/type-utils": "1.0.0"
+  },
   "devDependencies": {
     "@arethetypeswrong/core": "0.18.5",
     "@little-nebulae/error": "1.0.1",
@@ -45,8 +48,5 @@
       "onFail": "warn"
     }
   },
-  "packageManager": "pnpm@12.4.2",
-  "dependencies": {
-    "@little-nebulae/type-utils": "1.0.0"
-  }
+  "packageManager": "pnpm@12.4.2"
 }
