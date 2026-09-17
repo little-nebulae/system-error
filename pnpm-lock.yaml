@@ -165,10 +165,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@little-nebulae/type-utils':
-        specifier: 1.0.0
-        version: 1.0.0
     devDependencies:
       '@arethetypeswrong/core':
         specifier: 0.18.5
@@ -176,6 +172,9 @@ importers:
       '@little-nebulae/error':
         specifier: 1.0.1
         version: 1.0.1
+      '@little-nebulae/type-utils':
+        specifier: 1.0.0
+        version: 1.0.0
       '@types/node':
         specifier: 26.4.1
         version: 26.4.1
