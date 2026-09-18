@@ -5,12 +5,12 @@ import { x } from "tinyexec";
 function parseLine(line: string) {
   const [name, number, ...rest] = line.split(" ");
   const message = rest.join(" ");
-  return { name: name as string, number: number as string, message };
+  return { name: name as string, number: Number(number), message };
 }
 
 const record: Record<
   string,
-  { name: string; number: string; message: string }
+  { name: string; number: number; message: string }
 > = {};
 
 const result = x("errno", ["--list"]);
