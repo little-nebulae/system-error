@@ -1,4 +1,4 @@
-import type { ValueOf } from "@little-nebulae/type-utils";
+import type { ValueOf } from "type-fest";
 
 import type { ErrnoRecordValue } from "@/constants/errno";
 

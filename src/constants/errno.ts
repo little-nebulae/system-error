@@ -1,4 +1,4 @@
-import type { ValueOf } from "@little-nebulae/type-utils";
+import type { ValueOf } from "type-fest";
 
 export const ERRNO_RECORD = {
   EPERM: {
